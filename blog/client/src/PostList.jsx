@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios'
+import CommentCreate from './CommentCreate'
+import CommentList from "./CommentList";
 
 const PostList = () => {
 
@@ -16,12 +18,15 @@ const PostList = () => {
     }, [])
 
 
-
     return (
         <div className="d-flex flex-row flex-wrap justify-content-between">
             {Object.values(posts).map((post) => {
                 return (
-                    <h1 key={post.id}>{post.title}</h1>
+                    <div key={post.id}>
+                        <h3 key={post.id}>{post.title}</h3>
+                        <CommentList postId={post.id}/>
+                        <CommentCreate postId={post.id}/>
+                    </div>
                 )
             })}
         </div>
