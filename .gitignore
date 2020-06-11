@@ -1,4 +1,5 @@
 /blog/posts/node_modules/
 /blog/comments/node_modules/
 /blog/event-bus/node_modules/
+/blog/query/node_modules/
 .idea
