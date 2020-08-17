@@ -2,4 +2,6 @@
 /blog/comments/node_modules/
 /blog/event-bus/node_modules/
 /blog/query/node_modules/
+/blog/moderation/node_modules/
+/blog/moderation/package-lock.json
 .idea
