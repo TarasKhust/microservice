@@ -1,5 +1,4 @@
-import * as axios from "express/lib/request";
-
+const axios = require('axios');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
